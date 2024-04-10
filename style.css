@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
+  }
+
+body{
+    background:#f5f5f5;
+
+  
+}
+.icons{
+    width:28px;
+    height:28px;
+    color:#40449c;
+    margin: 0 15px;
+}
+.logo{
+width:80px;
+height:80px;
+
+}
+nav{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    background-color:#f0efef;
+    padding: 5px 5%;
+    position:sticky;
+    top:0;
+    z-index:100;
+
+}
+.nav-right ul li{
+    list-style: none;
+    display:inline-block;
+}
+.nav-left,.nav-right{
+    display:flex;
+    align-items:center;
+    font-weight:600;
+    color:#40449c;
+   font-size:18px;
+   height:60px;
+
+}
+
+.link2:link,
+.link2:visited{
+text-decoration:none;
+color:#40449c;
+
+
+}
+
+.link2:hover,
+.link2:active{
+    color:#6a70d8;
+    cursor:pointer;
+    align-items:center;
+}
+.container{
+    display:flex;
+    justify-content:space-between;
+    padding:13px 5%;
+    margin:0;
+}
+.left-sidebar{
+    flex-basis: 25%;
+    position:sticky;
+    top:105px;
+    align-self:flex-start;
+    left:0;
+}
+
+.main-content{
+  flex-basis:67%;
+  border-left:1px solid #40449c;
+}
+
+.imp-links a{
+    
+    display:flex;
+    align-items:center;
+    margin-bottom:30px;
+    width:fit-content;
+font-weight:600;
+}   
+.notif{
+    position:relative;
+}
+.notif::after{
+    content:'5';
+    font-size:8px;
+    text-align:center;
+    color:white;
+    width:12px;
+    height:12px;
+    border:0.1px solid #f5f5f5;
+    border-radius:50%;
+    background: #cb2121;
+    position:absolute;
+    top: 0;
+    right:0;} 
+  .logout{
+  margin-top:20px;
+  margin-bottom:0;
+  }  
+ .logout:link,.logout:visited{
+    cursor:pointer;
+    border-radius:20px;
+    background-color:#40449c;
+    PADDING:12PX 24PX;
+    text-decoration:none;
+color:#fff;
+ }
+.logout:hover,
+.logout:active{
+    cursor:pointer;
+    align-items:center;
+    background-color:#6a70d8;
+}
+.profile-pic{
+    width:60px;
+    heighT:60px;
+    border-radius:50%;
+    border:2px solid #40449c;
+    margin-right:10px;
+    margin-bottom:5px;
+    background-color: #fff;
+    
+}
+.post-container{
+    width:100%;
+    background:#fff;
+    border-radius:6px;
+    padding:20px;
+    color:#626262;
+ align-content:center;
+}
+.user-profile{
+    display:flex;
+    align-items:center;
+    margin-bottom:7px;
+}
+.account-name p{
+    font-weight:600;
+    color:#40449c;
+ 
+}
+.main-content{
+    overflow:scroll;
+}
+.post-pics{
+    margin-top:15px;
+    width:400px;
+    height:400px;
+    border-radius:20px;
+    margin-bottom:7px;
+    box-shadow:rgba(98, 98, 98, 0.182);
+    margin-top:0;
+}
+.comment-box input,
+.comment-box ::placeholder{
+   width:400px;
+    background:#4e54bd;
+    padding:10px;
+    outline:none;
+    border:#626262;
+    border-radius:20px;
+    color:white;
+    margin-bottom:2%;
+    box-shadow:rgba(0, 0, 0, 0.182);
+}
+.post-icons{
+    margin-bottom:5px;
+    gap:0;
+}
+.right-sidebar{
+    flex-basis: 25%;
+    position:sticky;
+    top:105px;
+    align-self:flex-start;
+    border:0;
+    position:sticky;
+    left:0;
+    padding-left:15px;
+}
+
+.online{
+    position:relative;
+}
+.online::after{
+    content:'';
+    width:12px;
+    height:12px;
+    border:0.1px solid #f5f5f5;
+    border-radius:50%;
+    background: #27cb21;
+    position:absolute;
+    top: 0;
+    right:0;} 
+
+   .contact-list{
+    flex-basis: 25%;
+    position:sticky;
+    top:105px;
+    align-self:flex-start;
+    left:0;
+   background-color:#f0efef;
+   height:100vh;
+   }
+
+   .message-box{
+    flex-basis: 75%;
+    position:sticky;
+    top:105px;
+    align-self:flex-start;
+    right:0;
+    height:100vh;
+   }
+   .account-id{
+    color:#40449c;
+   }
+   .caption{
+  margin-top:5px;
+  margin-bottom:10px;
+   }
+   .contact-name{
+    background-color:#6b4949;
+    padding: 5px 5%;
+    position:sticky;
+    top:0;
+    z-index:100;
+    display:flex;
+    justify-content:space-between;
+   }
+   .message{
+    display:flex;
+    gap:0;
+   }
+
+
+  .left-side {
+   flex-basis: 30%;
+   position:sticky;
+   align-self:flex-start;
+   left:0;
+}
+
+   .back{
+    font-size:24px;
+    font-weight:500;
+   }
+
+.chat-box{
+    flex-basis:70%;
+    overflow:scroll;
+}
+.chat-bubbles img{
+    width:700px;
+    height:max-content;
+    align-items: center;
+   align-content:center;
+   justify-items:center;
+   justify-content:center;
+    margin-top:40px;
+    text-align:center;
+
+}
+.contact-message{
+    background-color: #40449c;
+    color:#f5f5f5;
+    font-size: 24px;
+    height:80px;
+    text-align:center;
+    align-content:center;
+    top:0;
+    position:sticky;
+}

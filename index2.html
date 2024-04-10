@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Password Page</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+text-align: center;
+margin-top: 100px;
+}
+input[type="password"] {
+padding: 10px;
+font-size: 16px;
+}
+button {
+padding: 10px 20px;
+font-size: 16px;
+cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<h2>Please enter the password:</h2>
+<input type="password" id="passwordInput">
+<button onclick="checkPassword()">Submit</button>
+
+<script>
+// Define the correct password
+const correctPassword = "mysecretpassword";
+
+function checkPassword() {
+// Get the value entered by the user
+const enteredPassword = document.getElementById("passwordInput").value;
+
+```
+// Check if the entered password is correct
+if (enteredPassword === correctPassword) {
+  alert("Correct password! You may proceed.");
+  // Redirect to another page or perform other actions here
+} else {
+  alert("Incorrect password. Please try again.");
+}
+
+```
+
+}
+</script>
+
+</body>
+</html>
